@@ -21,3 +21,32 @@ const todoList: Todolist = {
     ]
 }
 
+
+//************************************************************************************************************************************************* */
+// ? extends interface.
+
+
+interface Book {
+    bookName: string,
+    bookPrice: number,
+}
+
+interface Ebook extends Book {
+    fileSize: number,
+    fileFormate: string
+}
+
+interface AudioBook extends Ebook {
+    duration: number
+}
+
+
+const bookSummery: AudioBook = {
+    bookName: 'herry potar',
+    bookPrice: 500,
+    fileFormate: 'mp4',
+    duration: 200,
+    fileSize: 5
+}
+
+//************************************************************************************************************************************************ */
