@@ -37,7 +37,7 @@ interface Ebook extends Book {
 }
 
 interface AudioBook extends Ebook {
-    duration: number
+    duration: number | string
 }
 
 
@@ -50,3 +50,7 @@ const bookSummery: AudioBook = {
 }
 
 //************************************************************************************************************************************************ */
+
+//? Merging '&' . Merging two interfaces
+
+
